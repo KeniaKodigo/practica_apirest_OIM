@@ -13,6 +13,11 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         //rutas para ofrecer un token (ofreciendo el permiso para los datos)
-        'http://localhost/pracica_apirest_oim/public/registrarCliente'
+        'http://localhost/pracica_apirest_oim/public/registrarCliente',
+        'http://localhost/pracica_apirest_oim/public/cursos',
+        'http://localhost/pracica_apirest_oim/public/registrarCurso',
+        'http://localhost/pracica_apirest_oim/public/cursobyId/*', //asignando una ruta con parametro
+        'http://localhost/pracica_apirest_oim/public/actualizarCurso/*',
+        'http://localhost/pracica_apirest_oim/public/eliminarCurso/*'
     ];
 }
